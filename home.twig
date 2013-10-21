@@ -1,0 +1,31 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+
+
+<header>
+   <div class="wrapper clearfix">
+        <div class="companyheader clearfix">
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        </div>
+            {{widget('extendednavigation', 'navigationheader', {})|raw}}
+    </div>
+</header>
+
+<section class="wrapper">
+{{widget('gallery', 'gallery', {'images':[{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'}]})|raw}}
+</section>
+
+<div class="main wrapper clearfix">
+{{zone('main')|raw}}
+</div>  
+
+<footer class="wrapper clearfix">
+    {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}           
+    {{widget('profile', 'footercolumn1profilecopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+</footer>
+
+
+
+{% endblock %}
