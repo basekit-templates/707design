@@ -3,56 +3,56 @@
 	"thumbnail":"707design.png",
 	"screenshot":"707design.png",
     "tags": {
-    "en": ["colorful", "bright", "clean", "vintage", "business", "colourful", "classic", "pattern", "texture", "background", "fashion", "retail"],
+    "en": ["colorful", "clean", "house", "gallery", "portfolio", "interior", "home"],
     "es": ["colorido", "claro", "limpio", "vintage", "negocio", "clasico", "patron", "textura", "fondo", "moda", "minorista"],
     "br": ["colorido", "claro", "limpio", "vintage", "negócios", "clássico", "padrão", "textura", "fundo", "moda", "varejo"]
     },
 	"colorSwatches":
     {
         "Swatch 1": {
-            "color1":"#ffffff",
-            "color2":"#ff0000",
-            "color3":"#000000",
-            "color4":"#a29582",
-            "color5":"#c6bcad",
+            "color1":"#ffffff", 
+            "color2":"#ff0000", 
+            "color3":"#eeeeee",
+            "color4":"#a29582", 
+            "color5":"#c6bcad", 
             "color6":"#c6bcad",
-            "color7":"#f9f6eb"
+            "color7":"#a29582"
         },
         "Swatch 2": {
-            "color1":"#f2f2f2",
+            "color1":"#ffffff", 
             "color2":"#ff0000",
-            "color3":"#000000",
-            "color4":"#444444",
-            "color5":"#484747",
-            "color6":"#484747",
-            "color7":"#f2f2f2"
+            "color3":"#eeeeee",
+            "color4":"#999999",
+            "color5":"#999999",
+            "color6":"#c6bcad",
+            "color7":"#999999"
         },
         "Swatch 3": {
-            "color1":"#faf7f5",
-            "color2":"#45bef2",
-            "color3":"#000000",
-            "color4":"#444444",
-            "color5":"#484747",
-            "color6":"#484747",
-            "color7":"#faf7f5"
+            "color1":"#ffffff", 
+            "color2":"#ff0000",
+            "color3":"#eeeeee",
+            "color4":"#C43436",
+            "color5":"#999999",
+            "color6":"#c6bcad",
+            "color7":"#999999"
         },
         "Swatch 4": {
-            "color1":"#f7f8fc",
-            "color2":"#ea982d",
-            "color3":"#000000",
-            "color4":"#444444",
-            "color5":"#484747",
-            "color6":"#484747",
-            "color7":"#f7f8fc"
+            "color1":"#ffffff",
+            "color2":"#ff0000",
+            "color3":"#eeeeee",
+            "color4":"#C3D193",
+            "color5":"#999999",
+            "color6":"#c6bcad",
+            "color7":"#999999"
         },
         "Swatch 5": {
-            "color1":"#f9fcfb",
-            "color2":"#ef3c29",
-            "color3":"#000000",
-            "color4":"#444444",
-            "color5":"#484747",
-            "color6":"#484747",
-            "color7":"#f9fcfb"
+            "color1":"#ffffff",
+            "color2":"#ff0000",
+            "color3":"#eeeeee",
+            "color4":"#F7A59F",
+            "color5":"#999999",
+            "color6":"#c6bcad",
+            "color7":"#999999"
         }
     },
     "fontSwatch": {
@@ -60,7 +60,7 @@
         "font1": {
             "font-family": "Quicksand",
             "font-size": "30px",
-            "font-weight": "300",
+            "font-weight": "inherit",
             "line-height": "40px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
@@ -102,7 +102,7 @@
             "font-size": "15px",
             "font-weight": "300",
             "line-height": "23px",
-            "color": "@color-swatch4",
+            "color": "@color-swatch7",
             "color-hover": "darken(@color-swatch6,20%)",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch1",
@@ -116,7 +116,7 @@
             "color": "@color-swatch1",
             "letter-spacing": "1px",
             "background-color": "@color-swatch4",
-            "background-color-hover": "darken(@color-swatch4,10%)"
+            "background-color-hover": "lighten(@color-swatch4,20%)"
         },
         "font8": {
             "font-family": "Quicksand",
