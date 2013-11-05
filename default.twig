@@ -2,13 +2,11 @@
 
 {% block content %}
 <div class="bk-pt-default">
-    <header>
-       <div class="wrapper clearfix">
+    <header class="wrapper clearfix">
             <div class="companyheader clearfix">
                 {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
             </div>
                 {{widget('extendednavigation', 'navigationheader', {})|raw}}
-        </div>
     </header>
 
     <div class="main wrapper clearfix">
