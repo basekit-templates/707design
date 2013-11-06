@@ -14,7 +14,28 @@
 </header>
 
 <section class="wrapper">
-{{widget('gallery', 'gallery', {'images':[{'imageHeight':'320', 'imageWidth':'480', 'url':'asset(images/gallery/1.jpg)', 'title':'Image One', 'description': 'This is Image One'}]})|raw}}
+
+
+{{widget('gallery', 'gallery', 
+{'showDescription': true,
+'showTitle': true,
+'images':
+[
+{'imageHeight':'320', 'imageWidth':'480', 'url':asset('/images/gallery/1.jpg'), 'title':'test title', 'description': 'test desc'},
+{'imageHeight':'320', 'imageWidth':'480', 'url':asset('/images/gallery/2.jpg'), 'title':'test title', 'description': 'test desc'},
+{'imageHeight':'320', 'imageWidth':'480', 'url':asset('/images/gallery/3.jpg'), 'title':'test title', 'description': 'test desc'},
+{'imageHeight':'320', 'imageWidth':'480', 'url':asset('/images/gallery/4.jpg'), 'title':'test title', 'description': 'test desc'},
+{'imageHeight':'320', 'imageWidth':'480', 'url':asset('/images/gallery/5.jpg'), 'title':'test title', 'description': 'test desc'},
+{'imageHeight':'320', 'imageWidth':'480', 'url':asset('/images/gallery/6.jpg'), 'title':'test title', 'description': 'test desc'},
+{'imageHeight':'320', 'imageWidth':'480', 'url':asset('/images/gallery/7.jpg'), 'title':'test title', 'description': 'test desc'},
+{'imageHeight':'320', 'imageWidth':'480', 'url':asset('/images/gallery/8.jpg'), 'title':'test title', 'description': 'test desc'},
+{'imageHeight':'320', 'imageWidth':'480', 'url':asset('/images/gallery/9.jpg'), 'title':'test title', 'description': 'test desc'}
+]
+})|raw}}
+
+
+</div>
+
 </section>
 
 <div class="main wrapper clearfix">
