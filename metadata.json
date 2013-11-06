@@ -91,7 +91,7 @@
         },
         "font5": {
             "font-family": "Quicksand",
-            "font-size": "15px",
+            "font-size": "16px",
             "font-weight": "300",
             "line-height": "25px",
             "color": "@color-swatch5",
@@ -99,7 +99,7 @@
         },
         "font6": {
             "font-family": "Quicksand",
-            "font-size": "15px",
+            "font-size": "16px",
             "font-weight": "300",
             "line-height": "23px",
             "color": "@color-swatch7",
@@ -110,7 +110,7 @@
         },
         "font7": {
             "font-family": "Quicksand",
-            "font-size": "14px",
+            "font-size": "16px",
             "font-weight": "300",
             "line-height": "25px",
             "color": "@color-swatch1",
