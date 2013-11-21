@@ -116,7 +116,7 @@
             "color": "@color-swatch1",
             "letter-spacing": "1px",
             "background-color": "@color-swatch4",
-            "background-color-hover": "lighten(@color-swatch4,20%)"
+            "background-color-hover": "lighten(@color-swatch4,5%)"
         },
         "font8": {
             "font-family": "Quicksand",
