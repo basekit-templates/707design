@@ -185,6 +185,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 header {
     margin: 30px 0 15px 0px;
+    padding: 0;
     background-color: @color-swatch1;
 }
 
@@ -378,7 +379,6 @@ footer h4 {
 
 .widget.extendednavigation li > ul {
   display: none;
-  background-color: @color-swatch1;
 }
 
 .widget.extendednavigation li:hover > ul {
@@ -395,12 +395,9 @@ footer h4 {
   display: block;
   width: 100%;
   text-align: left;
+  background-color: @color-swatch1;
   border-bottom: 1px dashed lighten(@color-swatch5,55%);
   padding: 10px 0;
-}
-
-.widget.extendednavigation li:hover > ul > li:hover {
-  background-color: @color-swatch1;
 }
 
 .widget.extendednavigation li:hover > ul > li:last-child {
@@ -1071,20 +1068,11 @@ hr.line.align-right {
 }
 
 .widget.contactform fieldset button.btn {
-    padding: 20px 22px;
-    margin: 0;
-    border: none;
-    font-family: @font-swatch7-font-family;
+    padding: 30px 22px;
     font-size: @font-swatch7-font-size;
-    font-weight:@font-swatch7-font-weight;
-    background-color: @font-swatch7-background-color;
-    color: @font-swatch7-color;
-    text-decoration: none;
-    letter-spacing: 1px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    margin-top:-5px;
 }
   
 .widget.contactform fieldset button.btn:hover {
@@ -1167,6 +1155,9 @@ hr.line.align-right {
   background-color: @font-swatch7-background-color;
   color: @font-swatch7-color;
   text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -1194,6 +1185,9 @@ hr.line.align-right {
   background-color: @font-swatch7-background-color;
   color: @font-swatch7-color;
   text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -1212,14 +1206,7 @@ hr.line.align-right {
 }
 
 .widget.tweet a {
-    background-image: image('/images/social/twitter.png');
-    background-repeat: no-repeat;
-    padding: 19px 14px 15px 63px;
-    font-family: @font-swatch7-font-family;
-    font-weight:@font-swatch7-font-weight;
-    color: @font-swatch7-color;
-    font-size: .9em;
-    text-decoration: none;
+    padding: 20px 14px 20px 43px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -1483,7 +1470,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
 }
 
 .widget.signupform fieldset input {
-    height: 40px;
+    height: 46px;
     width: 64%;
     border: 1px solid @color-swatch7;
     background-color: @color-swatch1;
