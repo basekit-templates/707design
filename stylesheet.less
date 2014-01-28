@@ -179,6 +179,18 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   border-top: none;
 }
 
+.widget.logo img {
+  max-width:50px;
+}
+
+.widget .extendednavigation ul li.folder .text:after {
+  display:none;
+}
+
+.widget .extendednavigation ul li:hover ul {
+  margin-top:10px;
+}
+
 /* ===============================
    HEADER
    =============================== */
@@ -298,6 +310,10 @@ footer h4 {
    EXTENDED NAVIGATION
    =============================== */
 
+.widget .extendednavigation {
+  min-height:0px;
+}
+
 .widget.extendednavigation {
   float: right;
   position: relative;
@@ -413,7 +429,7 @@ footer h4 {
 }
 
 .widget.extendednavigation li:hover > ul > li > a .text {
-  margin-left: 0;
+  margin-left: 15px;
 }
 
 .widget.extendednavigation ul li:hover > ul > li{
@@ -900,12 +916,10 @@ hr.line.align-right {
 }
 
 .widget.clicktocall a {
-    padding: 10px 0;
     font-family: @font-swatch4-font-family;
     font-size: @font-swatch4-font-size;
     font-weight: @font-swatch4-font-weight;
     line-height: @font-swatch4-line-height;
-    color: @font-swatch5-color;
     letter-spacing: @font-swatch4-letter-spacing;
     text-decoration: none;
 }
@@ -1776,12 +1790,11 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
 
   .widget .extendednavigation a.pull {
     display: block;
-    width: 100%;
     position: absolute;
-    top: -7px;
+    top: -70px;
   }
 
-    .widget .extendednavigation a.pull:after {
+  .widget .extendednavigation a.pull:after {
     content:"";
     background: image('/images/nav-icon.png') no-repeat;
     background-position: center;
@@ -1791,7 +1804,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
     display: inline-block;
     position: absolute;
     right: 0;
-    top: -50px;
+    box-shadow:none;
   }
 
   /* NAV */
@@ -2027,12 +2040,10 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
 }
 
 .widget.clicktocall a {
-    padding: 10px 0;
     font-family: @font-swatch5-font-family;
     font-size: @font-swatch5-font-size;
     font-weight: @font-swatch5-font-weight;
     line-height: @font-swatch5-line-height;
-    color: @font-swatch5-color;
     letter-spacing: @font-swatch5-letter-spacing;
     text-decoration: none;
 }
