@@ -169,7 +169,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 /* DEFAULT PAGE TYPE */
 
-.bk-pt-default header {
+.bk-pt-default .bk-header {
   padding: 0;
   border-bottom: 1px solid @color-swatch3;
   padding:28px 0px 1px 0px;
@@ -195,7 +195,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    HEADER
    =============================== */
 
-header {
+.bk-header {
     margin: 30px 0 15px 0px;
     padding: 0;
     background-color: @color-swatch1;
@@ -242,7 +242,7 @@ header {
    FOOTER
    =============================== */
 
-footer {
+.bk-footer {
     background-color: @color-swatch1;
     padding: 2em 0;
     margin-top: 3em;
@@ -250,10 +250,10 @@ footer {
     border-top:1px solid @color-swatch3;
 }
 
-footer h1,
-footer h2,
-footer h3,
-footer h4 {
+.bk-footer h1,
+.bk-footer h2,
+.bk-footer h3,
+.bk-footer h4 {
     color: @color-swatch1;
     padding-bottom: 20px;
 }
@@ -1416,7 +1416,7 @@ hr.line.align-right {
   color: lighten(@font-swatch5-color,30%);
 }
 
-footer .widget.profile .twitter span, .widget.profile .twitter span a {
+.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a {
   display: inline;
 }
 
@@ -1765,13 +1765,9 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
       border-top: none;
     }
 
-    footer {
-    }
-
-
         /* DEFAULT PAGE TYPE */
 
-    .bk-pt-default header {
+    .bk-pt-default .bk-header {
       padding: 0;
       border-bottom: 1px solid @color-swatch3;
       padding: 28px 0px 1px 0px;
@@ -1975,20 +1971,20 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
 
 @media only screen and (max-width: 480px) { 
 
-    footer {
+    .bk-footer {
         padding: 2.5em 0 0;
     }
 
-    footer h1, footer h2, footer h3, footer h4 {
+    .bk-footer h1, .bk-footer h2, .bk-footer h3, .bk-footer h4 {
         padding-bottom: 20px;
     }
 
-    footer .footer2 {
+    .bk-footer .footer2 {
         padding: 2em 0;
         margin-top: 3em;
     }
 
-    footer .footer2 .columns-two-right {
+    .bk-footer .footer2 .columns-two-right {
         text-align: left;
     }
 
@@ -2097,7 +2093,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
 
   /* DEFAULT PAGE TYPE */
 
-    .bk-pt-default header {
+    .bk-pt-default .bk-header {
     padding: 0;
     border-bottom: 1px solid @color-swatch3;
     padding: 28px 0px 1px 0px;
