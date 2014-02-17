@@ -169,7 +169,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 /* DEFAULT PAGE TYPE */
 
-.bk-pt-default header {
+.bk-pt-default .bk-header {
   padding: 0;
   border-bottom: 1px solid @color-swatch3;
   padding:28px 0px 1px 0px;
@@ -195,7 +195,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    HEADER
    =============================== */
 
-header {
+.bk-header {
     margin: 30px 0 15px 0px;
     padding: 0;
     background-color: @color-swatch1;
@@ -242,7 +242,7 @@ header {
    FOOTER
    =============================== */
 
-footer {
+.bk-footer {
     background-color: @color-swatch1;
     padding: 2em 0;
     margin-top: 3em;
@@ -250,10 +250,10 @@ footer {
     border-top:1px solid @color-swatch3;
 }
 
-footer h1,
-footer h2,
-footer h3,
-footer h4 {
+.bk-footer h1,
+.bk-footer h2,
+.bk-footer h3,
+.bk-footer h4 {
     color: @color-swatch1;
     padding-bottom: 20px;
 }
@@ -353,15 +353,17 @@ footer h4 {
 
 .widget.extendednavigation ul li.folder {
   display: block;
-  background-image: image('/images/arrow-down.png');
   background-position: right 17px;
   background-repeat: no-repeat;
   padding-right: 10px;
   cursor: pointer;
+  &:after {
+	  right: 9px;
+	  top: 39%;
+  }
 }
 
 .widget.extendednavigation ul li.folder:hover {
-  background-image: image('/images/arrow-down-hov.png');
   color: @font-swatch6-color-hover;
 }
 
@@ -426,10 +428,6 @@ footer h4 {
   color: @font-swatch6-color;
   margin-left: 0;
   padding:0;
-}
-
-.widget.extendednavigation li:hover > ul > li > a .text {
-  margin-left: 15px;
 }
 
 .widget.extendednavigation ul li:hover > ul > li{
@@ -1418,7 +1416,7 @@ hr.line.align-right {
   color: lighten(@font-swatch5-color,30%);
 }
 
-footer .widget.profile .twitter span, .widget.profile .twitter span a {
+.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a {
   display: inline;
 }
 
@@ -1483,7 +1481,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
     letter-spacing: @font-swatch5-letter-spacing;
 }
 
-.widget.signupform fieldset input {
+.widget.signupform fieldset input, .blog-search-input {
     height: 46px;
     width: 64%;
     border: 1px solid @color-swatch7;
@@ -1503,13 +1501,17 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
     max-width:192px;
 }
 
+.blog-search-form label {
+	display: block;
+}
+
 .widget.signupform fieldset input:focus {
     outline: none;
     box-shadow: 0 0 3px lighten(@color-swatch5,50%);
 }
 
-.widget.signupform fieldset button.btn {
-    padding: 12px 22px;
+.widget.signupform fieldset button.btn, .blog-search-submit-button {
+    padding: 9px 18px;
     margin: 0;
     border: none;
     background-color: @font-swatch7-background-color;
@@ -1527,6 +1529,10 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
     margin-top:6px;
 }
 
+.blog-search-submit-button {
+	padding: 13px 18px;
+}
+
 .widget.signupform fieldset button.btn:hover {
     background-color: lighten(@color-swatch4,5%);
     cursor: pointer;
@@ -1536,6 +1542,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
 
 .widget.profile fieldset {
   border:0;
+  letter-spacing: -5px;
 }
 
 .widget.profile form label {
@@ -1551,16 +1558,19 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
   letter-spacing: @font-swatch5-letter-spacing;
 }
 
-.widget.profile form input {
+.widget.profile form fieldset input {
+	letter-spacing: 0;
     width: 60%;
     height: 40px;
     padding: 0;
     font-family: @font-swatch5-font-family;
+    background-color: @color-swatch1;
+    border: 1px solid @color-swatch7;
+    box-sizing: border-box;
     font-size: 14px;
     color: @font-swatch5-color;
     text-indent: 10px;
     max-width: 300px;
-    border:1px solid @color-swatch3;
     -webkit-border-top-left-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-radius-topleft: 5px;
@@ -1578,7 +1588,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
     background-position: right center;
     background-repeat: no-repeat;
     margin: 0px 4px 0px 0px;
-    padding: 8px 24px 8px 15px;
+    padding: 6px 24px 9px 15px;
     font-family: @font-swatch7-font-family;
     font-weight:@font-swatch7-font-weight;
     line-height: @font-swatch7-line-height;
@@ -1696,6 +1706,9 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
     border-radius:10px;
     font-size:0;
     text-indent: -99999px;
+    &:after {
+	    display: none;
+    }
 }
 
 .widget.responsiveslideshow .slideshow-widget:hover .btn-play.pause
@@ -1710,7 +1723,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
   height: 8px;
   line-height: 14px;
   display: inline-block;
-  background-color: lighten(@color-swatch3,50%);
+  //background-color: lighten(@color-swatch3,50%);
   cursor: pointer;
 }
 
@@ -1752,13 +1765,9 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
       border-top: none;
     }
 
-    footer {
-    }
-
-
         /* DEFAULT PAGE TYPE */
 
-    .bk-pt-default header {
+    .bk-pt-default .bk-header {
       padding: 0;
       border-bottom: 1px solid @color-swatch3;
       padding: 28px 0px 1px 0px;
@@ -1962,20 +1971,20 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
 
 @media only screen and (max-width: 480px) { 
 
-    footer {
+    .bk-footer {
         padding: 2.5em 0 0;
     }
 
-    footer h1, footer h2, footer h3, footer h4 {
+    .bk-footer h1, .bk-footer h2, .bk-footer h3, .bk-footer h4 {
         padding-bottom: 20px;
     }
 
-    footer .footer2 {
+    .bk-footer .footer2 {
         padding: 2em 0;
         margin-top: 3em;
     }
 
-    footer .footer2 .columns-two-right {
+    .bk-footer .footer2 .columns-two-right {
         text-align: left;
     }
 
@@ -2084,7 +2093,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
 
   /* DEFAULT PAGE TYPE */
 
-    .bk-pt-default header {
+    .bk-pt-default .bk-header {
     padding: 0;
     border-bottom: 1px solid @color-swatch3;
     padding: 28px 0px 1px 0px;

@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<header>
+<header class="bk-header">
    <div class="wrapper clearfix">
         <div class="companyheader clearfix">
         	{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
@@ -12,7 +12,7 @@
     </div>
 </header>
 
-<section class="wrapper">
+<section class="bk-section wrapper">
 	{{widget('gallery', 'gallery', 
 	{'showDescription': true,
 	'showTitle': true,
@@ -37,7 +37,7 @@
 		{{zone('main')|raw}}
 	</div>  
 
-<footer class="wrapper clearfix">
+<footer class="bk-footer wrapper clearfix">
     {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}           
     {{widget('profile', 'footercolumn1profilecopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
 </footer>
