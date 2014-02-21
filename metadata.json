@@ -15,25 +15,25 @@
             "color3":"#eeeeee",
             "color4":"#a29582", 
             "color5":"#c6bcad", 
-            "color6":"#c6bcad",
+            "color6":"#a29582",
             "color7":"#a29582"
         },
         "Swatch 2": {
             "color1":"#ffffff", 
             "color2":"#ff0000",
             "color3":"#eeeeee",
-            "color4":"#999999",
+            "color4":"#4f7391",
             "color5":"#999999",
-            "color6":"#c6bcad",
+            "color6":"#4f7391",
             "color7":"#999999"
         },
         "Swatch 3": {
-            "color1":"#ffffff", 
+            "color1":"#f7f4e1", 
             "color2":"#ff0000",
             "color3":"#eeeeee",
             "color4":"#C43436",
             "color5":"#999999",
-            "color6":"#c6bcad",
+            "color6":"#C43436",
             "color7":"#999999"
         },
         "Swatch 4": {
@@ -42,7 +42,7 @@
             "color3":"#eeeeee",
             "color4":"#C3D193",
             "color5":"#999999",
-            "color6":"#c6bcad",
+            "color6":"#C3D193",
             "color7":"#999999"
         },
         "Swatch 5": {
@@ -51,7 +51,7 @@
             "color3":"#eeeeee",
             "color4":"#F7A59F",
             "color5":"#999999",
-            "color6":"#c6bcad",
+            "color6":"#F7A59F",
             "color7":"#999999"
         }
     },
@@ -92,7 +92,7 @@
         "font5": {
             "font-family": "\"Quicksand\", \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
             "font-size": "16px",
-            "font-weight": "300",
+            "font-weight": "400",
             "line-height": "25px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
@@ -100,9 +100,9 @@
         "font6": {
             "font-family": "\"Quicksand\", \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
             "font-size": "16px",
-            "font-weight": "300",
+            "font-weight": "400",
             "line-height": "23px",
-            "color": "@color-swatch7",
+            "color": "@color-swatch6",
             "color-hover": "darken(@color-swatch6,20%)",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch1",
@@ -111,7 +111,7 @@
         "font7": {
             "font-family": "\"Quicksand\", \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
             "font-size": "16px",
-            "font-weight": "300",
+            "font-weight": "400",
             "line-height": "25px",
             "color": "@color-swatch1",
             "letter-spacing": "1px",
@@ -121,7 +121,7 @@
         "font8": {
             "font-family": "\"Quicksand\", \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
             "font-size": "24px",
-            "font-weight": "300",
+            "font-weight": "400",
             "line-height": "34px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
@@ -129,7 +129,7 @@
         "font9": {
             "font-family": "\"Quicksand\", \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
             "font-size": "16px",
-            "font-weight": "300",
+            "font-weight": "400",
             "line-height": "26px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
@@ -137,7 +137,7 @@
         "font10": {
             "font-family": "\"Quicksand\", \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
             "font-size": "25px",
-            "font-weight": "300",
+            "font-weight": "400",
             "line-height": "40px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"

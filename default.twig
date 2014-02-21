@@ -2,12 +2,15 @@
 
 {% block content %}
 <div class="bk-pt-default">
-    <header class="bk-header wrapper clearfix">
-            <div class="companyheader clearfix">
-                {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+<header class="bk-header">
+   <div class="wrapper clearfix">
+        <div class="companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            {{widget('extendednavigation', 'navigationheader', {})|raw}}
             </div>
-                {{widget('extendednavigation', 'navigationheader', {})|raw}}
-    </header>
+    </div>
+</header>
 
     <div class="main wrapper clearfix">
     {{zone('main')|raw}}
