@@ -3,10 +3,7 @@
 	"thumbnail":"707design.png",
 	"screenshot":"707design.png",
 	"templateType":"standard",
-    "pageTypes": [
-        "home",
-        "default"
-    ],
+    
     "tags": {
     "en": ["colorful", "clean", "house", "gallery", "portfolio", "interior", "home"],
     "es": ["colorido", "claro", "limpio", "vintage", "negocio", "clasico", "patron", "textura", "fondo", "moda", "minorista"],
