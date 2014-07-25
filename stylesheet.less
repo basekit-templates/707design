@@ -117,8 +117,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 .bk-pt-default .bk-header {
   padding: 0;
-  border-bottom: 1px solid @color-swatch3;
-  padding:28px 0px 1px 0px;
+  border-bottom: 1px solid lighten(@color-swatch3,30%);
 }
 
 .bk-pt-default .inner-bg {
@@ -135,6 +134,10 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 .widget .extendednavigation ul li:hover ul {
   margin-top:10px;
+}
+
+input, textarea {
+  border-radius:5px;
 }
 
 /* ===============================
@@ -357,7 +360,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 .widget.extendednavigation li:hover > ul > li {
   display: block;
   width: 100%;
-  text-align: left;
   background-color: @color-swatch1;
   border-bottom: 1px dashed lighten(@color-swatch5,55%);
   padding: 10px 0;
@@ -373,6 +375,10 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   color: @font-swatch6-color;
   margin-left: 0;
   padding:0;
+}
+
+.widget.extendednavigation ul li:hover > ul {
+  background-color:@color-swatch4;
 }
 
 .widget.extendednavigation ul li:hover > ul > li{
@@ -768,6 +774,23 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     }
 }
 
+.blog-post-sharing {
+  margin-top:20px;
+}
+
+/* ===============================
+   Ecom
+   =============================== */
+
+
+.widget.ecomproduct .ecom-product .btn:hover {
+  background-color:lighten(@color-swatch3,10%);
+}
+
+.widget.ecombasket .ecombasket-pull {
+  border-radius:5px;
+}
+
 /* ===============================
    SLIDESHOW WIDGET
    =============================== */
@@ -944,8 +967,8 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 }
 
 .widget.feature .feature-btn .btnText {
-padding: 15px 25px;
-border: 1px dashed @color-swatch1;
+  padding: 15px 25px;
+  border: 1px dashed @color-swatch1;
 }
 
 .widget.feature button:hover {
@@ -1159,6 +1182,16 @@ border: 1px dashed @color-swatch1;
     margin-right: 5px
 }
 
+button.btn {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+button.btn:hover {
+  background-color:lighten(@color-swatch3,10%);
+}
+
 /* ===============================
    LINE WIDGET
    =============================== */
@@ -1341,7 +1374,7 @@ hr.line.align-right {
   border:1px solid @color-swatch7;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-image: image('/images/twitterlogo.png');
   background-repeat:no-repeat;
   background-position: 50% 20px;
@@ -1564,7 +1597,7 @@ hr.line.align-right {
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 19px center;
-  margin: 2.2em auto;
+  margin: 1em auto;
   border: none;
   font-family: @font-swatch7-font-family;
   font-size: @font-swatch7-font-size;
@@ -1594,7 +1627,7 @@ hr.line.align-right {
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 19px center;
-  margin: 2.2em auto;
+  margin: 1em auto;
   border: none;
   font-family: @font-swatch7-font-family;
   font-size: @font-swatch7-font-size;
@@ -1632,6 +1665,10 @@ hr.line.align-right {
 .widget.tweet a:hover, .tweet a:active {
   cursor: pointer;
   background-color: @font-swatch7-background-color-hover;
+}
+
+.widget.button, .widget.paypalbuynow, .widget.tweet, .widget.dropbox, .widget.clicktocall {
+  margin:0;
 }
 
 /* ==================================
@@ -1756,18 +1793,17 @@ hr.line.align-right {
 
 
 .widget.profile span,
-.widget.profile a {
+.widget.profile a, .widget.profile p {
     display: block;
     font-size: @font-swatch5-font-size;
     font-family: @font-swatch5-font-family;
-    color: @font-swatch4-color;
+    color: @font-swatch5-color;
     line-height: @font-swatch5-line-height;
     font-weight: @font-swatch5-font-weight;
 }
 
 .widget.profile a:hover {
-    color: @color-swatch3;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* FOOTER PROFILE - twitter in profile widget*/
@@ -1976,12 +2012,9 @@ hr.line.align-right {
     color: @font-swatch5-color;
     text-indent: 10px;
     max-width: 300px;
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    -moz-border-radius-topleft: 5px;
-    -moz-border-radius-bottomleft: 5px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .widget.profile form input:focus {
@@ -2003,12 +2036,9 @@ hr.line.align-right {
     font-size: @font-swatch7-font-size;
     text-decoration: none;
     text-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-    -webkit-border-top-right-radius: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-    -moz-border-radius-topright: 5px;
-    -moz-border-radius-bottomright: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     border:0;
 }
 
@@ -2024,11 +2054,6 @@ hr.line.align-right {
 @media only screen and (max-width: 768px) { 
     
     /* CUSTOM CSS */
-
-    .widget.profile span, .widget.profile a 
-    {
-      color: @font-swatch5-color;
-    }
 
     .canvas { 
       border: none;
@@ -2048,7 +2073,6 @@ hr.line.align-right {
     .bk-pt-default .bk-header {
       padding: 0;
       border-bottom: 1px solid @color-swatch3;
-      padding: 28px 0px 1px 0px;
     }
 
     .bk-pt-default .inner-bg {
@@ -2240,6 +2264,12 @@ hr.line.align-right {
     .widget.responsiveslideshow .slideshow-widget {
         height:400px;
     }
+    .widget.extendednavigation ul li.folder {
+    &:after {
+      right: 9px;
+      top: 50%;
+  }
+}
 
 }
 

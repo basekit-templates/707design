@@ -3,7 +3,7 @@
 	"thumbnail":"707design.png",
 	"screenshot":"707design.png",
 	"templateType":"standard",
-    
+    "pageTypes":["home"],
     "tags": {
     "en": ["colorful", "clean", "house", "gallery", "portfolio", "interior", "home"],
     "es": ["colorido", "claro", "limpio", "vintage", "negocio", "clasico", "patron", "textura", "fondo", "moda", "minorista"],
@@ -14,9 +14,9 @@
         "Swatch 1": {
             "color1":"#ffffff", 
             "color2":"#ff0000", 
-            "color3":"#eeeeee",
+            "color3":"#a29582",
             "color4":"#a29582", 
-            "color5":"#c6bcad", 
+            "color5":"#AAA193", 
             "color6":"#a29582",
             "color7":"#a29582"
         },
