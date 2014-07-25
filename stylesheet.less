@@ -124,10 +124,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   border-top: none;
 }
 
-.widget.logo img {
-  max-width:50px;
-}
-
 .widget .extendednavigation ul li.folder .text:after {
   display:none;
 }
@@ -168,12 +164,6 @@ input, textarea {
 }
 
 .widget.companyname a {
-  font-family:@font-swatch10-font-family;
-  font-weight: @font-swatch10-font-weight;
-  color:@font-swatch10-color;
-  line-height:@font-swatch10-line-height;
-  letter-spacing: @font-swatch10-letter-spacing;
-  font-size: @font-swatch10-font-size;
   padding: 0;
   float: left;
 }
@@ -185,6 +175,13 @@ input, textarea {
   margin-right: 2px;
   float: left;
   padding-top: 6px;
+}
+
+.widget {
+    &.logo, &.companyname {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 /* ===============================
@@ -242,12 +239,6 @@ input, textarea {
 
 .widget.navigation ul li a {
   display: block;
-  font-family:@font-swatch6-font-family;
-  font-size:@font-swatch6-font-size;
-  font-weight: @font-swatch6-font-weight;
-  color: @font-swatch6-color;
-  line-height:@font-swatch6-line-height;
-  letter-spacing: @font-swatch6-letter-spacing;
 }
 
 .widget.navigation ul li a:hover {
@@ -319,12 +310,6 @@ input, textarea {
 .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
   display: block;
   padding: 1px 17px;
-  font-family:@font-swatch6-font-family;
-  font-size:@font-swatch6-font-size;
-  font-weight: @font-swatch6-font-weight;
-  color: @font-swatch6-color;
-  line-height:@font-swatch6-line-height;
-  letter-spacing: @font-swatch6-letter-spacing;
 }
 
 .widget.extendednavigation ul li.folder .text:hover {
@@ -411,6 +396,12 @@ input, textarea {
 }
 .main .widget.extendednavigation {
   *zoom: 1;
+}
+
+.extendednavigation li.selected {
+    a, .text {
+        text-decoration:underline;
+    }
 }
 
 /* ===============================
@@ -791,6 +782,86 @@ input, textarea {
   border-radius:5px;
 }
 
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select {
+        -webkit-appearance: none;
+    -moz-appearance: window;
+    appearance: none;
+    outline: none !important;
+    -moz-outline-style: none;
+    border: 1px solid @color-swatch5, 25%;
+    position: relative;
+    background: transparent;
+    padding: 10px 23px 10px 10px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-image: image('/images/arrow.png');
+    background-position: right 6% center;
+    background-repeat: no-repeat;
+    border: 0;
+    background-position-x: 98%;
+    background-position-y: 53%;
+    border:1px solid @color-swatch7;
+    border-radius:5px;
+}
+
+.widget.ecomcheckout .delivery select {
+    -webkit-appearance: none;
+    -moz-appearance: window;
+    appearance: none;
+    outline: none !important;
+    -moz-outline-style: none;
+    border: 1px solid @color-swatch5, 25%;
+    position: relative;
+    background: transparent;
+    padding: 10px 23px 10px 10px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-image: image('/images/arrow.png');
+    background-position: right 6% center;
+    background-repeat: no-repeat;
+    border: 0;
+    background-position-x: 99%;
+    background-position-y: 53%;
+    border:1px solid @color-swatch7;
+    border-radius:5px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: window;
+    appearance: none;
+    outline: none !important;
+    -moz-outline-style: none;
+    border: 1px solid @color-swatch5, 25%;
+    position: relative;
+    background: transparent;
+    padding: 10px 23px 10px 10px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-image: image('/images/arrow.png');
+    background-position: right 6% center;
+    background-repeat: no-repeat;
+    border: 0;
+    background-position-x: 95%;
+    background-position-y: 53%;
+    border:1px solid @color-swatch7;
+    border-radius:5px;
+}
+
+select::-ms-expand {
+   display: none;
+}
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
+   select {
+   -moz-appearance: none;
+   text-indent: 0.01px
+   ;
+   text-overflow: '';
+}
+
 /* ===============================
    SLIDESHOW WIDGET
    =============================== */
@@ -831,14 +902,14 @@ input, textarea {
             &:after {
                 content: "\2190";
                 color: #fff;
-                top: 5px;
+                top: 8px;
             }
         }
         .btn-next {
             &:after {
                 content: "\2192";
                 color: #fff;
-                top: 5px;
+                top: 8px;
             }
         }
         /* Play Button */
@@ -917,8 +988,8 @@ input, textarea {
 
 .widget.feature .content .spare {
   margin: 0;
-  background-color: @color-swatch1;
   padding: 25px 0;
+  background-color:fade(@color-swatch1,80%);
 }
 
 /* FEATURE TITLE */
@@ -951,7 +1022,6 @@ input, textarea {
 
 .widget.feature .feature-btn {
   display: block;
-  margin: 20px 0 0;
 }
 
 .widget.feature button {
@@ -968,7 +1038,6 @@ input, textarea {
 
 .widget.feature .feature-btn .btnText {
   padding: 15px 25px;
-  border: 1px dashed @color-swatch1;
 }
 
 .widget.feature button:hover {
@@ -1432,14 +1501,19 @@ hr.line.align-right {
 }
 
 .widget.twitter .twitter-content span.bk-full-name {
-    font-family: @font-swatch5-font-family;
+    font-family: @font-swatch4-font-family;
     color: @font-swatch4-color;
-    font-size:@font-swatch9-font-size;
-    font-weight:500;
+    font-size:@font-swatch4-font-size;
+    font-weight:@font-swatch4-font-weight;
 }
 
 .widget.twitter .twitter-content time, .widget.twitter .twitter-content span {
   color: @font-swatch5-color;
+}
+
+.twitter div.twitter-profile-pic a,
+div.twitter-profile-pic {
+  line-height: 0;
 }
 
 
@@ -1715,71 +1789,6 @@ hr.line.align-right {
 .bk-profile-socialicons span a:hover {
     background-color: darken(@color-swatch4,5%);
 }
-
-/* SVG ICONS */
-
-.svg .widget.socialicons span.bk-socialicons-twitter a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
-    background-image: image('/images/social/socialicons-twitter.svg');
-}
-
-.svg .widget.socialicons span.bk-socialicons-linkedin a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
-    background-image: image('/images/social/socialicons-linkedin.svg')
-}
-
-.svg .widget.socialicons span.bk-socialicons-facebook a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
-    background-image: image('/images/social/socialicons-facebook.svg')
-}
-
-.svg .widget.socialicons span.bk-socialicons-rss a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
-    background-image: image('/images/social/socialicons-rss.svg')
-}
-
-.svg .widget.socialicons span.bk-socialicons-googleplus a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
-    background-image: image('/images/social/socialicons-googleplus.svg')
-}
-
-.svg .widget.socialicons span.bk-socialicons-youtube a,
-.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
-    background-image: image('/images/social/socialicons-youtube.svg')
-}
-
-/* PNG ICONS */
-
-.widget.socialicons span.bk-socialicons-twitter a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
-    background-image: image('/images/social/socialicons-twitter.png');
-}
-
-.widget.socialicons span.bk-socialicons-linkedin a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
-    background-image: image('/images/social/socialicons-linkedin.png')
-}
-
-.widget.socialicons span.bk-socialicons-facebook a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
-    background-image: image('/images/social/socialicons-facebook.png')
-}
-
-.widget.socialicons span.bk-socialicons-rss a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
-    background-image: image('/images/social/socialicons-rss.png')
-}
-
-.widget.socialicons span.bk-socialicons-googleplus a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
-    background-image: image('/images/social/socialicons-googleplus.png')
-}
-
-.widget.socialicons span.bk-socialicons-youtube a,
-.widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
-    background-image: image('/images/social/socialicons-youtube.png')
-}
-
 
 
 /* ===============================
@@ -2130,7 +2139,7 @@ hr.line.align-right {
 
   .widget.extendednavigation ul li {
     border-bottom: 1px dashed lighten(@color-swatch5,55%);
-    padding: 16px 0;
+    padding:0;
   }
 
    .widget.extendednavigation ul li:last-child {
@@ -2146,7 +2155,7 @@ hr.line.align-right {
   }
 
   .widget.extendednavigation ul li.folder {
-    padding: 16px 0;
+    padding: 5px 0;
   }
 
   .widget .extendednavigation li {
@@ -2155,7 +2164,7 @@ hr.line.align-right {
   }
 
   .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
-      padding: 5px 25px;
+      padding: 10px 25px;
       margin: 0;
   }
 
@@ -2172,7 +2181,7 @@ hr.line.align-right {
 
   .widget.extendednavigation ul li:hover > ul > li {
     border-top: 1px dashed lighten(@color-swatch5,55%);
-    padding: 16px 0;
+    padding: 5px 0;
   }
 
   .widget.extendednavigation ul li:hover > ul > li .text {
@@ -2213,10 +2222,6 @@ hr.line.align-right {
 
     .widget.feature .content {
         height: 450px;
-    }
-
-    .widget.feature .content .spare {
-        border-bottom: 1px dashed lighten(@color-swatch5,55%);
     }
 
     .widget.feature h2 {
@@ -2265,12 +2270,16 @@ hr.line.align-right {
         height:400px;
     }
     .widget.extendednavigation ul li.folder {
-    &:after {
-      right: 9px;
-      top: 50%;
-  }
-}
-
+        &:after {
+            right: 9px;
+            top: 50%;
+        }
+    }
+    .widget.extendednavigation .bk-overlay {
+        width: 40px;
+        left: inherit !important;
+        top: -50px!important;
+    }
 }
 
 /* ===============================

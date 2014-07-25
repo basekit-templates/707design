@@ -2,20 +2,20 @@
 
 {% block content %}
 <div class="bk-pt-default">
-<header class="bk-header">
-   <div class="wrapper clearfix">
-        <div class="companyheader clearfix">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-            {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
+    <header class="bk-header">
+        <div class="wrapper clearfix">
+            <div class="companyheader clearfix">
+                {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+                {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+                {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
             </div>
-    </div>
-</header>
+        </div>
+    </header>
 
-    <div class="main wrapper clearfix">
+<div class="main wrapper clearfix">
     {{zone('main')|raw}}
-    </div>  
-
+</div>
+  
     <footer class="bk-footer wrapper clearfix">
         {{widget('profile', 'footercolumn1socialicons', { 'profileType' : 'socialicons' })|raw}}           
         {{widget('profile', 'footercolumn1profilecopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
