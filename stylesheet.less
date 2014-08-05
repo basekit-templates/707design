@@ -4,6 +4,8 @@
 
 @import "@{templateCommon}/basekit-bootstrap.less";
 
+@import "@{templateLocal}/css/ecom.less";
+
 /* ===============================
    TEMPLATE CSS
    =============================== */
@@ -746,98 +748,6 @@ input, textarea {
   margin-top:20px;
 }
 
-/* ===============================
-   Ecom
-   =============================== */
-
-
-.widget.ecomproduct .ecom-product .btn:hover {
-  background-color:lighten(@color-swatch3,10%);
-}
-
-.widget.ecombasket .ecombasket-pull {
-  border-radius:5px;
-}
-
-.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select {
-        -webkit-appearance: none;
-    -moz-appearance: window;
-    appearance: none;
-    outline: none !important;
-    -moz-outline-style: none;
-    border: 1px solid @color-swatch5, 25%;
-    position: relative;
-    background: transparent;
-    padding: 10px 23px 10px 10px;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background-image: image('/images/arrow.png');
-    background-position: right 6% center;
-    background-repeat: no-repeat;
-    border: 0;
-    background-position-x: 98%;
-    background-position-y: 53%;
-    border:1px solid @color-swatch7;
-    border-radius:5px;
-}
-
-.widget.ecomcheckout .delivery select {
-    -webkit-appearance: none;
-    -moz-appearance: window;
-    appearance: none;
-    outline: none !important;
-    -moz-outline-style: none;
-    border: 1px solid @color-swatch5, 25%;
-    position: relative;
-    background: transparent;
-    padding: 10px 23px 10px 10px;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background-image: image('/images/arrow.png');
-    background-position: right 6% center;
-    background-repeat: no-repeat;
-    border: 0;
-    background-position-x: 99%;
-    background-position-y: 53%;
-    border:1px solid @color-swatch7;
-    border-radius:5px;
-}
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: window;
-    appearance: none;
-    outline: none !important;
-    -moz-outline-style: none;
-    border: 1px solid @color-swatch5, 25%;
-    position: relative;
-    background: transparent;
-    padding: 10px 23px 10px 10px;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background-image: image('/images/arrow.png');
-    background-position: right 6% center;
-    background-repeat: no-repeat;
-    border: 0;
-    background-position-x: 95%;
-    background-position-y: 53%;
-    border:1px solid @color-swatch7;
-    border-radius:5px;
-}
-
-select::-ms-expand {
-   display: none;
-}
-.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
-   select {
-   -moz-appearance: none;
-   text-indent: 0.01px
-   ;
-   text-overflow: '';
-}
 
 /* ===============================
    SLIDESHOW WIDGET
