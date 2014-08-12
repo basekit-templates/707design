@@ -2,7 +2,9 @@
 /* ===============================
    Ecom
    =============================== */
-
+.widget.ecombasket .ecombasket-remove-button {
+    border: none;
+}
 
 .widget.ecomproduct .ecom-product .btn:hover {
   background-color:lighten(@color-swatch3,10%);
@@ -215,7 +217,6 @@ select::-ms-expand {
                     right: 20px;
                     display: block;
                     top: 20px;
-                    height: 30px;
                     line-height: 30px;
                     text-align: center;
                     font-size: bkscale(@font-swatch5-font-size, 0.8);
@@ -230,10 +231,8 @@ select::-ms-expand {
                 .basket-summary-quantitybtn {
                     background-color: transparent;
                     margin: 0;
-                    position: absolute;
+                    position: relative;
                     width: 150px;
-                    right: 20px;
-                    top: 50px;
                     height: 40px;
                     @media @bp-checkout-compact {
                         position: relative;
