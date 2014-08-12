@@ -110,9 +110,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   display:none;
 }
 
-.widget .extendednavigation ul li:hover ul {
-  margin-top:10px;
-}
 
 input, textarea {
   border-radius:5px;
@@ -247,6 +244,12 @@ input, textarea {
 .widget.extendednavigation ul {
   padding: 0;
   margin: 0;
+  li {
+    .text {
+      padding: 5px 0;
+      display: inline-block;
+    }
+  }
 }
 
 .widget.extendednavigation ul.align-center li
@@ -267,17 +270,20 @@ input, textarea {
 .widget.extendednavigation ul li {
   float: left;
   display: block;
-  padding: 10px 0 20px 0;
 }
 
 .widget.extendednavigation ul li.folder {
   background-position: right 17px;
   background-repeat: no-repeat;
-  padding-right: 10px;
   cursor: pointer;
+  padding-right: 20px;
   &:after {
 	  right: 9px;
 	  top: 39%;
+  }
+  .text {
+    padding-left: 6px;
+    padding-right: 6px;
   }
 }
 
@@ -288,7 +294,7 @@ input, textarea {
 
 .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
   display: block;
-  padding: 1px 17px;
+
 }
 
 .widget.extendednavigation ul li.folder .text:hover {
@@ -302,7 +308,6 @@ input, textarea {
 }
 
 .widget.extendednavigation ul li.folder {
-  padding-right: 8px;
   height: 100%;
   cursor: pointer;
 }
@@ -318,7 +323,7 @@ input, textarea {
   background-color: @color-swatch1;
   border: 1px dashed lighten(@color-swatch5,55%);
   z-index: 500;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .widget.extendednavigation li:hover > ul > li {
@@ -326,7 +331,6 @@ input, textarea {
   width: 100%;
   background-color: @color-swatch1;
   border-bottom: 1px dashed lighten(@color-swatch5,55%);
-  padding: 10px 0;
 }
 
 .widget.extendednavigation li:hover > ul > li:last-child {
@@ -1969,7 +1973,10 @@ div.twitter-profile-pic {
   }
 
   .widget.extendednavigation ul li.folder {
-    padding: 5px 0;
+  }
+
+  .widget .extendednavigation ul li:hover ul {
+    margin-top: 0;
   }
 
   .widget .extendednavigation li {
@@ -1978,7 +1985,6 @@ div.twitter-profile-pic {
   }
 
   .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
-      padding: 10px 25px;
       margin: 0;
   }
 
@@ -1989,13 +1995,11 @@ div.twitter-profile-pic {
   .widget.extendednavigation ul li:hover > ul {
       display: block!important;
       width: 100%;
-      margin: 16px 0;
       padding: 0;
   }
 
   .widget.extendednavigation ul li:hover > ul > li {
     border-top: 1px dashed lighten(@color-swatch5,55%);
-    padding: 5px 0;
   }
 
   .widget.extendednavigation ul li:hover > ul > li .text {
@@ -2014,9 +2018,6 @@ div.twitter-profile-pic {
     border-top: none;
   }
 
-  .widget.extendednavigation li:hover > ul > li > a {
-    padding-left: 10px;
-  }
 
     .widget.extendednavigation li:hover > ul {
     text-align: center;
