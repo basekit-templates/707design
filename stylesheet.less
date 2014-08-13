@@ -124,9 +124,12 @@ input, textarea {
 }
 
 .companyheader {
-    display: block;
+    float: left;
     padding: 0;
-    width:100%;
+    width: 30%;
+    @media @tablet {
+      width: 85%;
+    }
 }
 
 /* COMPANY NAME */
@@ -178,61 +181,25 @@ input, textarea {
     padding-bottom: 20px;
 }
 
-/* ===============================
-   STANDARD NAVIGATION
-   =============================== */
-
-.widget.navigation {
-}
-
-.widget.navigation ul {
-  padding: 0;
-  margin: 0;
-}
-
-.widget.navigation ul.align-center li
-{
-  text-align: center;
-}
-
-.widget.navigation ul.align-left li
-{
-  text-align: left;
-}
-
-.widget.navigation ul.align-right li
-{
-  text-align: right;
-}
-
-.widget.navigation ul li {
-  float: left;
-  display: block;
-  padding-right: 30px;
-}
-
-.widget.navigation ul li a {
-  display: block;
-}
-
-.widget.navigation ul li a:hover {
-  text-decoration: none;
-  color: @font-swatch6-color-hover;
-}
 
 /* ===============================
    EXTENDED NAVIGATION
    =============================== */
 
+.bk-nav {
+  width: 70%;
+  float: left;
+  vertical-align: middle;
+  @media @tablet {
+    width: 100%;
+  }
+}
 .widget .extendednavigation {
   min-height:0px;
 }
 
 .widget.extendednavigation {
-  float: right;
-  position: relative;
   background-color: transparent;
-  width: 85%;
 }
 
 .widget.extendednavigation a.pull {
@@ -698,6 +665,19 @@ input, textarea {
     }
 }
 
+.blog-post-feature-image-wrap {
+  margin-bottom: 1.3em;
+  background-image: none!important;
+  @media @mobile {
+    margin-bottom: .5em;
+  }
+  img {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+}
+
 .blog-post-item {
     margin: 1.5em 0;
     padding-bottom: 1em;
@@ -848,6 +828,10 @@ select::-ms-expand {
 
 .widget.ecomcheckout .delivery .delivery-title {
   margin-top:30px;
+}
+
+.ecom-product-preview-image-wrap {
+  background-position: -9999px;
 }
 
 // Ecom Basket Summary
@@ -1409,6 +1393,13 @@ button.btn:hover {
   background-color:lighten(@color-swatch3,10%);
 }
 
+.ecom-product-go-to-checkout-btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
 /* ===============================
    LINE WIDGET
    =============================== */
@@ -1419,7 +1410,7 @@ button.btn:hover {
 
 hr.line {
    width: 100%;
-   border: 1px solid @color-swatch3;
+   border: 1px solid lighten(@color-swatch3,25%);
 }
 
 hr.line.align-left {
@@ -1908,7 +1899,7 @@ div.twitter-profile-pic {
 
 .widget.profile .twitter .twitter-content span.bk-full-name {
     font-family: @font-swatch5-font-family;
-    color: lighten(@font-swatch5-color,30%);
+    color: lighten(@font-swatch5-color,10%);
 }
 
 .widget.profile .twitter .twitter-content p {
@@ -1917,11 +1908,11 @@ div.twitter-profile-pic {
 
 .widget.profile .twitter .twitter-content a:hover {
   text-decoration: underline;
-  color: lighten(@font-swatch5-color,30%);
+  color: lighten(@font-swatch5-color,10%);
 }
 
 .widget.profile .twitter-content span a {
-  color: lighten(@font-swatch5-color,30%);
+  color: lighten(@font-swatch5-color,10%);
 }
 
 .bk-footer .widget.profile .twitter span, .widget.profile .twitter span a {
@@ -2162,7 +2153,6 @@ div.twitter-profile-pic {
     .widget.extendednavigation {
         display: block;
         width: 100%;
-        margin-top: 20px;
     }
 
      /* NAV ICON */
@@ -2170,7 +2160,7 @@ div.twitter-profile-pic {
   .widget .extendednavigation a.pull {
     display: block;
     position: absolute;
-    top: -55px;
+    top: -35px;
   }
 
   .widget .extendednavigation a.pull:after {
@@ -2199,6 +2189,9 @@ div.twitter-profile-pic {
   .widget.extendednavigation ul li {
     border-bottom: 1px dashed lighten(@color-swatch5,55%);
     padding:0;
+    &:first-child {
+      margin-top: 15px;
+    }
   }
 
    .widget.extendednavigation ul li:last-child {
@@ -2213,7 +2206,8 @@ div.twitter-profile-pic {
     color: @font-swatch6-color-hover;
   }
 
-  .widget.extendednavigation ul li.folder {
+  .widget.extendednavigation ul li.folder ul li:first-child {
+    margin-top: 0;
   }
 
   .widget .extendednavigation ul li:hover ul {
