@@ -96,7 +96,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 /* DEFAULT PAGE TYPE */
 
 .bk-pt-default .bk-header {
-  padding: 0;
   border-bottom: 1px solid lighten(@color-swatch3,30%);
 }
 
@@ -118,8 +117,7 @@ input, textarea {
    =============================== */
 
 .bk-header {
-    margin: 30px 0 15px 0px;
-    padding: 0;
+    padding: 25px 0;
     background-color: @color-swatch1;
 }
 
@@ -1432,7 +1430,7 @@ hr.line.align-right {
 // -----------------------------
 
 .widget.gallery {
-    margin: 20px 0 20px -0.5%;
+    margin: 0 0 20px -0.5%;
     ul li {
         @media @tablet {
             width: 50%;
@@ -2132,7 +2130,6 @@ div.twitter-profile-pic {
         /* DEFAULT PAGE TYPE */
 
     .bk-pt-default .bk-header {
-      padding: 0;
       border-bottom: 1px solid @color-swatch3;
     }
 
@@ -2142,6 +2139,12 @@ div.twitter-profile-pic {
 
 
     /* COMPANY HEADER */
+
+    .widget {
+      &.logo, &.companyname {
+        vertical-align: bottom;
+      }
+    }
 
     .widget.companyheader {
         width: 100%;
@@ -2476,9 +2479,7 @@ div.twitter-profile-pic {
   /* DEFAULT PAGE TYPE */
 
     .bk-pt-default .bk-header {
-    padding: 0;
     border-bottom: 1px solid @color-swatch3;
-    padding: 28px 0px 1px 0px;
   }
 
     .bk-pt-default .inner-bg {
