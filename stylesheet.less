@@ -77,7 +77,7 @@ blockquote p {
 }
 
 .bk-content-text ul, .bk-content-text ol, .bk-content-text li {
-  padding-left: 1.4em; 
+  padding-left: 1.4em;
   text-indent: -1.4em;
 }
 
@@ -397,7 +397,7 @@ input, textarea {
                 list-style: none;
                 padding: 0;
                 margin: 0;
-            } 
+            }
 
 
             /* MENU-HEADER AND SUB-SECTION HEADER */
@@ -409,7 +409,7 @@ input, textarea {
                     }
                     h1, h2, {    /* menu-name menu-section-name */
                         text-align: center;
-                        overflow: hidden; 
+                        overflow: hidden;
                     &:before, &:after {
                         content: "";
                         @media only screen and (max-width: 480px) {
@@ -437,8 +437,8 @@ input, textarea {
                 }
             }
                     p {    /* menu-description  menu-section-description  menu-availability */
-                        text-align: center;       
-                    }  
+                        text-align: center;
+                    }
             }   /* end MENU-HEADER AND SUB-SECTION HEADER */
 
 
@@ -472,7 +472,7 @@ input, textarea {
                         border-bottom: 1px solid @color-swatch3;
                         padding-bottom: 30px;
                         margin-bottom: 30px;
-                        h3 {    /* menu-item-name */  
+                        h3 {    /* menu-item-name */
                             padding: 0;
                             font-family: @font-swatch3-font-family;
                             color: @font-swatch3-color;
@@ -529,7 +529,7 @@ input, textarea {
                             margin: 0;
                             padding: 0;
                         }
-                        .menu-item-nutritional-prop { 
+                        .menu-item-nutritional-prop {
                             font-size:@font-swatch5-font-size;
                             font-weight: @font-swatch5-font-weight;
                             line-height:@font-swatch5-line-height;
@@ -561,12 +561,12 @@ input, textarea {
                                     color: @color-swatch1;
                                     margin-right: 5px;
                                     padding:5px;
-                                }                                
+                                }
                                 .not-spicy-icon {
                                     display:none;
                                 }
 
-                            } /* end menu-section-item-dietary-props */ 
+                            } /* end menu-section-item-dietary-props */
 
                         .menu-item-description, .menu-section-item-description {
                             margin-bottom: 0.5em;
@@ -577,9 +577,9 @@ input, textarea {
 
                 }  /* end li .menu-item */
 
-            }   /* end ol .menu-items */  
+            }   /* end ol .menu-items */
 
-            .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */  
+            .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */
                 border: 1px solid @color-swatch3;
                 padding: 2em;
                 margin-bottom: 2em;
@@ -610,7 +610,7 @@ input, textarea {
                 margin: 10px 0;
                 padding: 20px;
                 width: 100%;
-                @media @tablet { 
+                @media @tablet {
                     margin: 0;
                     padding: 0px;
                 }
@@ -628,7 +628,7 @@ input, textarea {
                         display: inline-block;
                     }
                     dt {    /* dietary-icon */
-                        vertical-align: top; 
+                        vertical-align: top;
                         width: 20px;
                         height: 20px;
                         background-size: 20px;
@@ -642,10 +642,10 @@ input, textarea {
                         font-size:@font-swatch5-font-size;
                         font-weight: @font-swatch5-font-weight;
                         line-height:@font-swatch5-line-height;
-                        color: @font-swatch5-color; 
+                        color: @font-swatch5-color;
                         letter-spacing: @font-swatch5-letter-spacing;
                         margin: 0 5px -7px;
-                    }   
+                    }
                 }/* end dl */
             }   /* end menu-info */
     }/* end main */
@@ -854,7 +854,7 @@ select::-ms-expand {
       padding: 0px;
       margin:0px 0px 30px 0px;
     }
-    tr:first-child { 
+    tr:first-child {
           outline: 1px solid darken(@color-swatch1,10%);
             background-color: darken(@color-swatch1,4%);
             -webkit-border-top-left-radius: 4px;
@@ -1157,7 +1157,7 @@ select::-ms-expand {
     width: 100%;
 }
 
-.widget.feature .wrapper {  
+.widget.feature .wrapper {
     width: 50%;
     margin: 0px auto;
     display: table;
@@ -1217,7 +1217,7 @@ select::-ms-expand {
   font-weight:@font-swatch7-font-weight;
   font-size: @font-swatch7-font-size;
   letter-spacing: @font-swatch7-letter-spacing;
-  background-color: @font-swatch7-background-color; 
+  background-color: @font-swatch7-background-color;
   color: @font-swatch7-color;
   text-decoration: none;
   border: none;
@@ -1228,7 +1228,7 @@ select::-ms-expand {
 }
 
 .widget.feature button:hover {
-  background-color: @font-swatch7-background-color-hover; 
+  background-color: @font-swatch7-background-color-hover;
   cursor: pointer;
 }
 
@@ -1290,6 +1290,9 @@ select::-ms-expand {
     margin: 4px 0;
     cursor: pointer;
     display: inline-block;
+    .more, .less {
+        color: @font-swatch7-color;
+    }
 }
 
 .widget.content span.expand:hover,
@@ -1362,7 +1365,7 @@ select::-ms-expand {
 }
 
 
-.widget.button button:hover 
+.widget.button button:hover
 {
   background-color: lighten(@color-swatch4,5%);
   cursor: pointer;
@@ -1648,7 +1651,7 @@ div.twitter-profile-pic {
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
-  
+
 .widget.contactform fieldset button.btn:hover {
   background-color: lighten(@color-swatch4,5%);
   background-image: image('/images/button-black-arrow.svg');
@@ -1811,7 +1814,7 @@ div.twitter-profile-pic {
 }
 
 .widget.socialicons span a:hover,
-.widget.profile 
+.widget.profile
 .bk-profile-socialicons span a:hover {
     background-color: darken(@color-swatch4,5%);
 }
@@ -2095,11 +2098,11 @@ div.twitter-profile-pic {
    IPAD WIDTH
    =============================== */
 
-@media only screen and (max-width: 768px) { 
-    
+@media only screen and (max-width: 768px) {
+
     /* CUSTOM CSS */
 
-    .canvas { 
+    .canvas {
       border: none;
       width: 100%;
       margin: 0 auto;
@@ -2168,7 +2171,7 @@ div.twitter-profile-pic {
 
   /* NAV */
 
-  
+
  .widget .extendednavigation ul {
     width: 100%;
     display: none;
@@ -2305,7 +2308,7 @@ div.twitter-profile-pic {
 
     /* SLIDESHOW */
 
-    .widget.responsiveslideshow .slideshow-image-list, 
+    .widget.responsiveslideshow .slideshow-image-list,
     .widget.responsiveslideshow .slideshow-widget {
         height:400px;
     }
@@ -2330,17 +2333,17 @@ div.twitter-profile-pic {
   .widget.ecomproductslist label {
     display:block;
   }
-  .widget.feature .wrapper {  
+  .widget.feature .wrapper {
     width: 70%;
   }
-  
+
 }
 
 /* ===============================
    IPHONE WIDTH
    =============================== */
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
 
     .bk-footer {
         padding: 2.5em 0 0;
@@ -2448,7 +2451,7 @@ div.twitter-profile-pic {
     text-align: justify;
   }
 
-  .widget.clicktocall a.italic { 
+  .widget.clicktocall a.italic {
     font-style: italic;
   }
 
@@ -2506,7 +2509,7 @@ div.twitter-profile-pic {
 
 }
 
-@media only screen and (min-width: 1140px) { 
+@media only screen and (min-width: 1140px) {
     .wrapper {
         width: 90%;
         max-width: 1500px;
