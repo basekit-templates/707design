@@ -222,9 +222,19 @@ input, textarea {
   text-align: center;
 }
 
-.widget.extendednavigation ul.align-left li
-{
+.widget.extendednavigation {
+  ul.align-center li.folder {
+      padding: 0;
+  }
+}
+
+.widget.extendednavigation ul.align-left li {
   text-align: left;
+  @media @tablet {
+    a {
+      padding: 0 5px;
+    }
+  }
 }
 
 .widget.extendednavigation ul.align-right li
